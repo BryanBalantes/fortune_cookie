@@ -1,0 +1,877 @@
+/* Start Here */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff6f6;
+}
+.container_wrapper {
+  width: 20%;
+}
+.container {
+  width: 50%;
+  margin: 1px auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 780px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+  perspective: 1000px;
+  font-family: verdana;
+  border-radius: 10px;
+}
+.card_inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  border-radius: 10px;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+.back {
+  overflow: hidden;
+  z-index: -1;
+  display: inline-block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice1.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.second_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.second_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice2.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.third_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.third_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice3.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.fourth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.fourth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice4.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.fifth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.fifth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice5.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.sixth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.sixth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice6.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.seventh_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.seventh_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice7.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.eighth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.eighth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice8.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.ninth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.ninth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice9.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.tenth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.tenth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice10.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.eleventh_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.eleventh_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice11.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twelveth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twelveth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice12.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.thirteenth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.thirteenth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice13.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.fourteenth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.fourteenth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice14.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.fifteenth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.fifteenth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice15.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.sixteenth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.sixteenth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice16.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.seventeenth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.seventeenth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice17.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.eighteenth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.eighteenth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice18.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.nineteenth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.nineteenth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice19.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twentieth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twentieth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice20.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-first_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-first_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice21.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-second_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-second_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice22.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-third_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-third_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice23.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-fourth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-fourth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice24.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-fifth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-fifth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice25.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-sixth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-sixth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice26.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-seventh_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-seventh_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice27.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-eighth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-eighth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice28.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.twenty-ninth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.twenty-ninth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice29.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.thirtieth_card_back {
+  overflow: hidden;
+  z-index: -1;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.thirtieth_card_back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-sizing: 100% 100%;
+  background: url(img/advice30.PNG) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+}
+.front,
+.second_card_front,
+.third_card_front,
+.fourth_card_front,
+.fifth_card_front,
+.sixth_card_front,
+.seventh_card_front,
+.eighth_card_front,
+.ninth_card_front,
+.tenth_card_front,
+.eleventh_card_front,
+.twelveth_card_front,
+.thirteenth_card_front,
+.fourteenth_card_front,
+.fifteenth_card_front,
+.sixteenth_card_front,
+.seventeenth_card_front,
+.eighteenth_card_front,
+.nineteenth_card_front,
+.twentieth_card_front,
+.twenty-first_card_front,
+.twenty-second_card_front,
+.twenty-third_card_front,
+.twenty-fourth_card_front,
+.twenty-fifth_card_front,
+.twenty-sixth_card_front,
+.twenty-seventh_card_front,
+.twenty-eighth_card_front,
+.twenty-ninth_card_front,
+.thirtieth_card_front,
+.back,
+.second_card_back,
+.third_card_back,
+.fourth_card_back,
+.fifth_card_back,
+.sixth_card_back,
+.seventh_card_back,
+.eighth_card_back,
+.ninth_card_back,
+.tenth_card_back,
+.eleventh_card_back,
+.twelveth_card_back,
+.thirteenth_card_back,
+.fourteenth_card_back,
+.fifteenth_card_back,
+.sixteenth_card_back,
+.seventeenth_card_back,
+.eighteenth_card_back,
+.nineteenth_card_back,
+.twentieth_card_back,
+.twenty-first_card_back,
+.twenty-second_card_back,
+.twenty-third_card_back,
+.twenty-fourth_card_back,
+.twenty-fifth_card_back,
+.twenty-sixth_card_back,
+.twenty-seventh_card_back,
+.twenty-eighth_card_back,
+.twenty-ninth_card_back,
+.thirtieth_card_back {
+  transition: all 0.5s linear;
+}
+.front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.second_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.third_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.fourth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.fifth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.sixth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.seventh_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.eighth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.ninth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.tenth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.eleventh_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twelveth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.thirteenth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.fourteenth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.fifteenth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.sixteenth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+.seventeenth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.eighteenth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.nineteenth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twentieth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-first_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-second_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-third_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-fourth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-fifth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-sixth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-seventh_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-eighth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.twenty-ninth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.thirtieth_card_front {
+  background: url(img/cookie.jpg) no-repeat;
+  background-size: 101%;
+  background-position: 1px;
+  z-index: 1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+.back {
+  box-shadow: 0 0 0 #aaa;
+}
+.flipped,
+.hovercard:hover {
+  transform: rotateY(180deg);
+}
+.flipped .front,
+.hovercard:hover .front {
+  box-shadow: 0 0 0 #aaa;
+}
+.flipped .back,
+.hovercard:hover .back {
+  box-shadow: 5px 5px 5px #aaa;
+}
